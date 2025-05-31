@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dashboard.css";
+import "./Sidebar.css";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/baapcompany_logo.jpg";
