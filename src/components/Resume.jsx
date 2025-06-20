@@ -5,9 +5,8 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Resume.css";
 
-// Constants
 const API_BASE_URL = "http://localhost:4000";
-const TOKEN_EXPIRY_THRESHOLD = 5 * 60 * 1000; // 5 minutes before token expiry
+const TOKEN_EXPIRY_THRESHOLD = 5 * 60 * 1000; 
 
 export default function Resume() {
   const navigate = useNavigate();
@@ -15,7 +14,6 @@ export default function Resume() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Token management would typically come from auth context in a real app
   const token = localStorage.getItem("authToken") || "";
 
   const fetchResume = async () => {
@@ -23,7 +21,6 @@ export default function Resume() {
       setLoading(true);
       setError(null);
       
-      // Check token validity before making the request
       if (!token || isTokenExpired(token)) {
         handleTokenExpiry();
         return;
@@ -91,7 +88,6 @@ export default function Resume() {
 
   const handleDownloadPDF = () => {
     toast.info("PDF download feature would be implemented in production");
-    // In a real app, this would call a backend service to generate PDF
   };
 
   if (loading) {
