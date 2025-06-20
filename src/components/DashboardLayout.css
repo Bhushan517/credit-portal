@@ -1,0 +1,15 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: flex-start;  /* start from top vertically */
+  padding: 40px;
+  background-color: #f1f5f9;
+  overflow-y: auto;
+}

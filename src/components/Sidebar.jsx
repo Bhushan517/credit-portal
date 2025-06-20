@@ -5,26 +5,29 @@ import { Link } from "react-router-dom";
 import logo from "../assets/baapcompany_logo.jpg";
 const Dashboard = () => {
   return (
-    <aside className="sidebar">
+   
+<>
+
+ <aside className="sidebar">
       <div className="logo-container"></div>
       <nav className="menu">
         <img src={logo} alt="logo" className="logo" /> <br /> <br />
         <ul>
           <li className="menu-item active">
             <span className="icon">📄</span>
-            <Link to="/resume">
+            <Link to="/dashboard/resume">
               <span>Resume</span>
             </Link>{" "}
           </li>
           <li className="menu-item">
             <span className="icon">📊</span>
-            <Link to="/creditscore">
+            <Link to="/dashboard/creditscore">
               <span>Credit Score</span>
             </Link>
           </li>
           <li className="menu-item">
             <span className="icon">✍️</span>
-            <Link to="/tests">
+            <Link to="/dashboard/tests">
               <span>Tests</span>
             </Link>{" "}
           </li>
@@ -49,9 +52,18 @@ const Dashboard = () => {
           <span className="user-email">user@example.com</span>
         </div>
       </div> */}
+
+
+
     </aside>
+
+    
+
+</>
+   
     
   );
+  
 };
 
 export default Dashboard;

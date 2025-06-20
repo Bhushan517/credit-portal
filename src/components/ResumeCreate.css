@@ -1,0 +1,81 @@
+.resume-form-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume-form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.resume-form-container h3 {
+  color: #444;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.2rem;
+}
+
+.resume-form-container input,
+.resume-form-container textarea,
+.resume-form-container select {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.4rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border 0.2s ease-in-out;
+}
+
+.resume-form-container input:focus,
+.resume-form-container textarea:focus,
+.resume-form-container select:focus {
+  outline: none;
+  border: 1px solid #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.resume-form-container button[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-form-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .resume-form-container {
+    padding: 1rem;
+  }
+
+  .resume-form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .resume-form-container input,
+  .resume-form-container textarea,
+  .resume-form-container select {
+    font-size: 0.95rem;
+  }
+
+  .resume-form-container button[type="submit"] {
+    font-size: 1rem;
+  }
+}
